@@ -32,7 +32,7 @@ git push
 
 **按照上述的方法，第一次上传大文件基本还是会报错，而且百思不得其解~**  
 
-**解决：**出现上述问题，先reset 到你刚才commit的前一个commit,(意思就是撤销刚才的commit，回到起点再来一次。)
+**解决：** 出现上述问题，先reset 到你刚才commit的前一个commit,(意思就是撤销刚才的commit，回到起点再来一次。)
 第一、二步同上，第三步的时候，先将 .gitattributes文件，单独commit，然后push，完成之后，在进行第四部(第四部add 之后 执行git lfs ls-files应该能看见东西了)。
 到这里应该就没问题了。
 
